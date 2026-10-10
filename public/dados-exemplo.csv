@@ -1,0 +1,201 @@
+id_venda,data,produto,categoria,regiao,quantidade,preco_unitario
+1,2025-01-01,Clássico,Lanches,Norte,1,28.90
+2,2025-02-08,Refrigerante,Bebidas,Oeste,2,7.50
+3,2025-03-15,Brownie,Sobremesas,Leste,3,13.90
+4,2025-04-22,Batata frita,Porções,Sul,4,18.90
+5,2025-05-02,Duplo Bacon,Lanches,Norte,1,35.90
+6,2025-06-09,Suco natural,Bebidas,Oeste,2,9.90
+7,2025-07-16,Milkshake,Sobremesas,Leste,3,16.90
+8,2025-08-23,Anéis de cebola,Porções,Sul,4,21.90
+9,2025-09-03,Clássico,Lanches,Norte,1,28.90
+10,2025-10-10,Refrigerante,Bebidas,Oeste,2,7.50
+11,2025-11-17,Brownie,Sobremesas,Leste,3,13.90
+12,2025-12-24,Batata frita,Porções,Sul,4,18.90
+13,2025-01-04,Duplo Bacon,Lanches,Norte,1,35.90
+14,2025-02-11,Suco natural,Bebidas,Oeste,2,9.90
+15,2025-03-18,Milkshake,Sobremesas,Leste,3,16.90
+16,2025-04-25,Anéis de cebola,Porções,Sul,4,21.90
+17,2025-05-05,Clássico,Lanches,Norte,1,28.90
+18,2025-06-12,Refrigerante,Bebidas,Oeste,2,7.50
+19,2025-07-19,Brownie,Sobremesas,Leste,3,13.90
+20,2025-08-26,Batata frita,Porções,Sul,4,18.90
+21,2025-09-06,Duplo Bacon,Lanches,Norte,1,35.90
+22,2025-10-13,Suco natural,Bebidas,Oeste,2,9.90
+23,2025-11-20,Milkshake,Sobremesas,Leste,3,16.90
+24,2025-12-27,Anéis de cebola,Porções,Sul,4,21.90
+25,2025-01-07,Clássico,Lanches,Norte,1,28.90
+26,2025-02-14,Refrigerante,Bebidas,Oeste,2,7.50
+27,2025-03-21,Brownie,Sobremesas,Leste,3,13.90
+28,2025-04-01,Batata frita,Porções,Sul,4,18.90
+29,2025-05-08,Duplo Bacon,Lanches,Norte,1,35.90
+30,2025-06-15,Suco natural,Bebidas,Oeste,2,9.90
+31,2025-07-22,Milkshake,Sobremesas,Leste,3,16.90
+32,2025-08-02,Anéis de cebola,Porções,Sul,4,21.90
+33,2025-09-09,Clássico,Lanches,Norte,1,28.90
+34,2025-10-16,Refrigerante,Bebidas,Oeste,2,7.50
+35,2025-11-23,Brownie,Sobremesas,Leste,3,13.90
+36,2025-12-03,Batata frita,Porções,Sul,4,18.90
+37,2025-01-10,Duplo Bacon,Lanches,Norte,1,35.90
+38,2025-02-17,Suco natural,Bebidas,Oeste,2,9.90
+39,2025-03-24,Milkshake,Sobremesas,Leste,3,16.90
+40,2025-04-04,Anéis de cebola,Porções,Sul,4,21.90
+41,2025-05-11,Clássico,Lanches,Norte,1,28.90
+42,2025-06-18,Refrigerante,Bebidas,Oeste,2,7.50
+43,2025-07-25,Brownie,Sobremesas,Leste,3,13.90
+44,2025-08-05,Batata frita,Porções,Sul,4,18.90
+45,2025-09-12,Duplo Bacon,Lanches,Norte,1,35.90
+46,2025-10-19,Suco natural,Bebidas,Oeste,2,9.90
+47,2025-11-26,Milkshake,Sobremesas,Leste,3,16.90
+48,2025-12-06,Anéis de cebola,Porções,Sul,4,21.90
+49,2025-01-13,Clássico,Lanches,Norte,1,28.90
+50,2025-02-20,Refrigerante,Bebidas,Oeste,2,7.50
+51,2025-03-27,Brownie,Sobremesas,Leste,3,13.90
+52,2025-04-07,Batata frita,Porções,Sul,4,18.90
+53,2025-05-14,Duplo Bacon,Lanches,Norte,1,35.90
+54,2025-06-21,Suco natural,Bebidas,Oeste,2,9.90
+55,2025-07-01,Milkshake,Sobremesas,Leste,3,16.90
+56,2025-08-08,Anéis de cebola,Porções,Sul,4,21.90
+57,2025-09-15,Clássico,Lanches,Norte,1,28.90
+58,2025-10-22,Refrigerante,Bebidas,Oeste,2,7.50
+59,2025-11-02,Brownie,Sobremesas,Leste,3,13.90
+60,2025-12-09,Batata frita,Porções,Sul,4,18.90
+61,2025-01-16,Duplo Bacon,Lanches,Norte,1,35.90
+62,2025-02-23,Suco natural,Bebidas,Oeste,2,9.90
+63,2025-03-03,Milkshake,Sobremesas,Leste,3,16.90
+64,2025-04-10,Anéis de cebola,Porções,Sul,4,21.90
+65,2025-05-17,Clássico,Lanches,Norte,1,28.90
+66,2025-06-24,Refrigerante,Bebidas,Oeste,2,7.50
+67,2025-07-04,Brownie,Sobremesas,Leste,3,13.90
+68,2025-08-11,Batata frita,Porções,Sul,4,18.90
+69,2025-09-18,Duplo Bacon,Lanches,Norte,1,35.90
+70,2025-10-25,Suco natural,Bebidas,Oeste,2,9.90
+71,2025-11-05,Milkshake,Sobremesas,Leste,3,16.90
+72,2025-12-12,Anéis de cebola,Porções,Sul,4,21.90
+73,2025-01-19,Clássico,Lanches,Norte,1,28.90
+74,2025-02-26,Refrigerante,Bebidas,Oeste,2,7.50
+75,2025-03-06,Brownie,Sobremesas,Leste,3,13.90
+76,2025-04-13,Batata frita,Porções,Sul,4,18.90
+77,2025-05-20,Duplo Bacon,Lanches,Norte,1,35.90
+78,2025-06-27,Suco natural,Bebidas,Oeste,2,9.90
+79,2025-07-07,Milkshake,Sobremesas,Leste,3,16.90
+80,2025-08-14,Anéis de cebola,Porções,Sul,4,21.90
+81,2025-09-21,Clássico,Lanches,Norte,1,28.90
+82,2025-10-01,Refrigerante,Bebidas,Oeste,2,7.50
+83,2025-11-08,Brownie,Sobremesas,Leste,3,13.90
+84,2025-12-15,Batata frita,Porções,Sul,4,18.90
+85,2025-01-22,Duplo Bacon,Lanches,Norte,1,35.90
+86,2025-02-02,Suco natural,Bebidas,Oeste,2,9.90
+87,2025-03-09,Milkshake,Sobremesas,Leste,3,16.90
+88,2025-04-16,Anéis de cebola,Porções,Sul,4,21.90
+89,2025-05-23,Clássico,Lanches,Norte,1,28.90
+90,2025-06-03,Refrigerante,Bebidas,Oeste,2,7.50
+91,2025-07-10,Brownie,Sobremesas,Leste,3,13.90
+92,2025-08-17,Batata frita,Porções,Sul,4,18.90
+93,2025-09-24,Duplo Bacon,Lanches,Norte,1,35.90
+94,2025-10-04,Suco natural,Bebidas,Oeste,2,9.90
+95,2025-11-11,Milkshake,Sobremesas,Leste,3,16.90
+96,2025-12-18,Anéis de cebola,Porções,Sul,4,21.90
+97,2025-01-25,Clássico,Lanches,Norte,1,28.90
+98,2025-02-05,Refrigerante,Bebidas,Oeste,2,7.50
+99,2025-03-12,Brownie,Sobremesas,Leste,3,13.90
+100,2025-04-19,Batata frita,Porções,Sul,4,18.90
+101,2025-05-26,Duplo Bacon,Lanches,Norte,1,35.90
+102,2025-06-06,Suco natural,Bebidas,Oeste,2,9.90
+103,2025-07-13,Milkshake,Sobremesas,Leste,3,16.90
+104,2025-08-20,Anéis de cebola,Porções,Sul,4,21.90
+105,2025-09-27,Clássico,Lanches,Norte,1,28.90
+106,2025-10-07,Refrigerante,Bebidas,Oeste,2,7.50
+107,2025-11-14,Brownie,Sobremesas,Leste,3,13.90
+108,2025-12-21,Batata frita,Porções,Sul,4,18.90
+109,2025-01-01,Duplo Bacon,Lanches,Norte,1,35.90
+110,2025-02-08,Suco natural,Bebidas,Oeste,2,9.90
+111,2025-03-15,Milkshake,Sobremesas,Leste,3,16.90
+112,2025-04-22,Anéis de cebola,Porções,Sul,4,21.90
+113,2025-05-02,Clássico,Lanches,Norte,1,28.90
+114,2025-06-09,Refrigerante,Bebidas,Oeste,2,7.50
+115,2025-07-16,Brownie,Sobremesas,Leste,3,13.90
+116,2025-08-23,Batata frita,Porções,Sul,4,18.90
+117,2025-09-03,Duplo Bacon,Lanches,Norte,1,35.90
+118,2025-10-10,Suco natural,Bebidas,Oeste,2,9.90
+119,2025-11-17,Milkshake,Sobremesas,Leste,3,16.90
+120,2025-12-24,Anéis de cebola,Porções,Sul,4,21.90
+121,2025-01-04,Clássico,Lanches,Norte,1,28.90
+122,2025-02-11,Refrigerante,Bebidas,Oeste,2,7.50
+123,2025-03-18,Brownie,Sobremesas,Leste,3,13.90
+124,2025-04-25,Batata frita,Porções,Sul,4,18.90
+125,2025-05-05,Duplo Bacon,Lanches,Norte,1,35.90
+126,2025-06-12,Suco natural,Bebidas,Oeste,2,9.90
+127,2025-07-19,Milkshake,Sobremesas,Leste,3,16.90
+128,2025-08-26,Anéis de cebola,Porções,Sul,4,21.90
+129,2025-09-06,Clássico,Lanches,Norte,1,28.90
+130,2025-10-13,Refrigerante,Bebidas,Oeste,2,7.50
+131,2025-11-20,Brownie,Sobremesas,Leste,3,13.90
+132,2025-12-27,Batata frita,Porções,Sul,4,18.90
+133,2025-01-07,Duplo Bacon,Lanches,Norte,1,35.90
+134,2025-02-14,Suco natural,Bebidas,Oeste,2,9.90
+135,2025-03-21,Milkshake,Sobremesas,Leste,3,16.90
+136,2025-04-01,Anéis de cebola,Porções,Sul,4,21.90
+137,2025-05-08,Clássico,Lanches,Norte,1,28.90
+138,2025-06-15,Refrigerante,Bebidas,Oeste,2,7.50
+139,2025-07-22,Brownie,Sobremesas,Leste,3,13.90
+140,2025-08-02,Batata frita,Porções,Sul,4,18.90
+141,2025-09-09,Duplo Bacon,Lanches,Norte,1,35.90
+142,2025-10-16,Suco natural,Bebidas,Oeste,2,9.90
+143,2025-11-23,Milkshake,Sobremesas,Leste,3,16.90
+144,2025-12-03,Anéis de cebola,Porções,Sul,4,21.90
+145,2025-01-10,Clássico,Lanches,Norte,1,28.90
+146,2025-02-17,Refrigerante,Bebidas,Oeste,2,7.50
+147,2025-03-24,Brownie,Sobremesas,Leste,3,13.90
+148,2025-04-04,Batata frita,Porções,Sul,4,18.90
+149,2025-05-11,Duplo Bacon,Lanches,Norte,1,35.90
+150,2025-06-18,Suco natural,Bebidas,Oeste,2,9.90
+151,2025-07-25,Milkshake,Sobremesas,Leste,3,16.90
+152,2025-08-05,Anéis de cebola,Porções,Sul,4,21.90
+153,2025-09-12,Clássico,Lanches,Norte,1,28.90
+154,2025-10-19,Refrigerante,Bebidas,Oeste,2,7.50
+155,2025-11-26,Brownie,Sobremesas,Leste,3,13.90
+156,2025-12-06,Batata frita,Porções,Sul,4,18.90
+157,2025-01-13,Duplo Bacon,Lanches,Norte,1,35.90
+158,2025-02-20,Suco natural,Bebidas,Oeste,2,9.90
+159,2025-03-27,Milkshake,Sobremesas,Leste,3,16.90
+160,2025-04-07,Anéis de cebola,Porções,Sul,4,21.90
+161,2025-05-14,Clássico,Lanches,Norte,1,28.90
+162,2025-06-21,Refrigerante,Bebidas,Oeste,2,7.50
+163,2025-07-01,Brownie,Sobremesas,Leste,3,13.90
+164,2025-08-08,Batata frita,Porções,Sul,4,18.90
+165,2025-09-15,Duplo Bacon,Lanches,Norte,1,35.90
+166,2025-10-22,Suco natural,Bebidas,Oeste,2,9.90
+167,2025-11-02,Milkshake,Sobremesas,Leste,3,16.90
+168,2025-12-09,Anéis de cebola,Porções,Sul,4,21.90
+169,2025-01-16,Clássico,Lanches,Norte,1,28.90
+170,2025-02-23,Refrigerante,Bebidas,Oeste,2,7.50
+171,2025-03-03,Brownie,Sobremesas,Leste,3,13.90
+172,2025-04-10,Batata frita,Porções,Sul,4,18.90
+173,2025-05-17,Duplo Bacon,Lanches,Norte,1,35.90
+174,2025-06-24,Suco natural,Bebidas,Oeste,2,9.90
+175,2025-07-04,Milkshake,Sobremesas,Leste,3,16.90
+176,2025-08-11,Anéis de cebola,Porções,Sul,4,21.90
+177,2025-09-18,Clássico,Lanches,Norte,1,28.90
+178,2025-10-25,Refrigerante,Bebidas,Oeste,2,7.50
+179,2025-11-05,Brownie,Sobremesas,Leste,3,13.90
+180,2025-12-12,Batata frita,Porções,Sul,4,18.90
+181,2025-01-19,Duplo Bacon,Lanches,Norte,1,35.90
+182,2025-02-26,Suco natural,Bebidas,Oeste,2,9.90
+183,2025-03-06,Milkshake,Sobremesas,Leste,3,16.90
+184,2025-04-13,Anéis de cebola,Porções,Sul,4,21.90
+185,2025-05-20,Clássico,Lanches,Norte,1,28.90
+186,2025-06-27,Refrigerante,Bebidas,Oeste,2,7.50
+187,2025-07-07,Brownie,Sobremesas,Leste,3,13.90
+188,2025-08-14,Batata frita,Porções,Sul,4,18.90
+189,2025-09-21,Duplo Bacon,Lanches,Norte,1,35.90
+190,2025-10-01,Suco natural,Bebidas,Oeste,2,9.90
+191,2025-11-08,Milkshake,Sobremesas,Leste,3,16.90
+192,2025-12-15,Anéis de cebola,Porções,Sul,4,21.90
+193,2025-01-22,Clássico,Lanches,Norte,1,28.90
+194,2025-02-02,Refrigerante,Bebidas,Oeste,2,7.50
+195,2025-03-09,Brownie,Sobremesas,Leste,3,13.90
+196,2025-04-16,Batata frita,Porções,Sul,4,18.90
+197,2025-05-23,Duplo Bacon,Lanches,Norte,1,35.90
+198,2025-06-03,Suco natural,Bebidas,Oeste,2,9.90
+199,2025-07-10,Milkshake,Sobremesas,Leste,3,16.90
+200,2025-08-17,Anéis de cebola,Porções,Sul,4,21.90

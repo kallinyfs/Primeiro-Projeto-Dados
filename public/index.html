@@ -1,0 +1,82 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Dashboard interativo para análise de vendas">
+  <title>Pulse Vendas | Análise de vendas</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    body,h1,h2,p,button,input,select{font-family:'Manrope',sans-serif}body{background-color:#f6ead6;background-image:radial-gradient(rgba(189,81,68,.08) .7px,transparent .7px),linear-gradient(135deg,rgba(255,255,255,.28),transparent 45%);background-size:13px 13px,100% 100%}h1,h2,.brand-logo-text strong{font-family:'DM Serif Display','Manrope',serif!important;font-weight:400!important}h1{letter-spacing:-.03em!important;text-shadow:2px 3px 0 #f0d487,5px 8px 16px rgba(73,51,41,.2)!important}.hero-brand-panel{background:#5a2430;padding:22px 26px 24px;border-radius:14px;box-shadow:0 6px 0 #3d2027,0 14px 26px rgba(73,32,40,.16);flex:1;min-width:0}.title-ribbon{display:block;background:transparent;color:#fffaf0;padding:0;border-radius:0;box-shadow:none;text-shadow:1px 2px 0 rgba(61,32,39,.35)!important}.title-ribbon span{color:#fffaf0!important}.hero-brand-panel .eyebrow{color:#f0d487}.hero-brand-panel .subtitle{color:#f7e7d0}.brand-lockup{display:flex;align-items:center;gap:16px;margin-bottom:22px}.diner-logo{width:108px;height:78px;flex:0 0 108px}.diner-logo img{display:block;width:100%;height:100%;filter:drop-shadow(0 5px 0 rgba(73,51,41,.12)) drop-shadow(0 8px 10px rgba(73,51,41,.12))}.brand-logo-text{font:600 .66rem 'Manrope',sans-serif;line-height:1.1;letter-spacing:.13em;text-transform:uppercase;color:#fffaf0}.brand-logo-text strong{display:block;font-size:1.48rem;letter-spacing:-.03em;color:#fffaf0;text-transform:none;text-shadow:1px 2px 0 #3d2027}.mystery-strip{display:flex;align-items:center;gap:9px;margin-top:18px;color:#f0d487;font-size:.64rem;font-weight:600;letter-spacing:.09em;text-transform:uppercase}.mystery-strip::before,.mystery-strip::after{content:'';height:1px;background:rgba(240,212,135,.45);flex:0 1 42px}.mystery-dot{display:inline-block;width:6px;height:6px;border-radius:50%;background:#e98b55;margin-right:2px}.panel{box-shadow:0 5px 0 #e5cda7,0 14px 30px rgba(86,55,35,.11)!important}.metric-card{position:relative;overflow:hidden;box-shadow:0 4px 0 #e5cda7,0 12px 22px rgba(86,55,35,.1)!important}.metric-icon{position:absolute;right:18px;top:16px;display:grid;place-items:center;width:31px;height:31px;border-radius:10px;background:#f0d487;color:#493329;font:700 .9rem 'Manrope',sans-serif}.metric-card.accent .metric-icon{background:#f8dfd5;color:#bd5144}
+  </style>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@4.4.4/dist/chart.umd.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/papaparse@5.4.1/papaparse.min.js"></script>
+  <style>
+    .notice{background:#f7f0e3;border-color:#e5d8c2;color:#526266}.notice-icon{border-color:#c6b69b}.notice p{color:#7c817b}.field input,.field select,.search{border-color:#e1d6c2}.field input:focus,.field select:focus,.search input:focus{box-shadow:0 0 0 3px #f1e6d4}.metric-card{border-top-color:#ded2bd}.table-panel td{border-bottom-color:#eee7da}.table-panel tbody tr:hover{background:#fcf8ef}.chart-panel{position:relative;overflow:hidden;border-top:4px solid #c85d4d}.chart-panel::after{content:'✦';position:absolute;right:20px;top:17px;color:#f4dc8a;font-size:1rem;opacity:.85}.chart-panel .chart-heading{padding-right:30px}.chart-panel .chart-heading h2{color:#493329}.chart-panel .unit{background:#f8e8e1;color:#bd5144;border-radius:999px;padding:5px 9px;font-weight:700}.chart-wide{border-top-color:#f4dc8a}.chart-wide::after{color:#c85d4d}.chart-hint{background:#fbf1e2;border-left:3px solid #f4dc8a;padding:6px 8px;border-radius:4px}.github-link{color:#bd5144;font-weight:700;text-decoration:none;border-bottom:1px solid #d5a52f}.github-link:hover{color:#493329}
+  </style>
+  <style>
+    .hero-brand-panel{background:#874955!important;box-shadow:0 6px 0 #6c3741,0 14px 26px rgba(108,55,65,.16)!important}.hero-brand-panel .eyebrow,.hero-brand-panel .mystery-strip{color:#f4dc8a!important}.metric-icon{background:#f4dc8a!important}.github-link{border-bottom-color:#f4dc8a}.profile-links{display:flex;align-items:center;gap:8px;margin-top:18px;padding-top:13px;border-top:1px solid rgba(244,220,138,.35)}.profile-name{color:#fffaf0;font:700 .75rem 'Manrope',sans-serif;letter-spacing:.08em;margin-right:3px}.github-corner,.linkedin-corner{display:inline-grid;place-items:center;width:32px;height:32px;margin-left:0;color:#fffaf0;background:#c85d4d;border-radius:50%;transition:transform .2s,background .2s}.github-corner:hover,.linkedin-corner:hover{transform:translateY(-2px);background:#a9443b}.github-corner svg{width:18px;height:18px;fill:currentColor}.linkedin-corner{background:#f4dc8a;color:#493329}.linkedin-corner svg{width:18px;height:18px;fill:currentColor}.chart-panel .chart-heading h2{color:#765f54!important}
+  </style>
+</head>
+<body>
+  <main class="container">
+    <header class="hero">
+      <div class="hero-brand-panel">
+        <div class="brand-lockup" aria-label="Logo Pulse Burger">
+          <div class="diner-logo"><img src="logo-brasa-pao.svg" alt="Logo Brasa & Pão, hambúrguer minimalista"></div>
+          <span class="brand-logo-text"><strong>Brasa &amp; Pão</strong>Hamburgeria</span>
+        </div>
+        <p class="eyebrow">FUNDAMENTOS DE IA E ANÁLISE DE DADOS</p>
+        <h1 class="title-ribbon">Brasa &amp; Pão <span>Hamburgeria</span></h1>
+        <p class="subtitle">Uma visão simples e interativa do desempenho comercial.</p>
+        <div class="mystery-strip"><span class="mystery-dot" aria-hidden="true"></span>Relatório de desempenho · análise em andamento</div>
+        <div class="profile-links"><span class="profile-name">Kalliny Santos</span><a class="github-corner" href="https://github.com/kallinyfs" target="_blank" rel="noopener noreferrer" aria-label="Abrir GitHub de Kalliny Santos" title="GitHub de Kalliny Santos"><svg viewBox="0 0 16 16" aria-hidden="true"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27s1.36.09 2 .27c1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg></a><a class="linkedin-corner" href="https://www.linkedin.com/in/kalliny-santos-704b8a34a/?isSelfProfile=true" target="_blank" rel="noopener noreferrer" aria-label="Abrir LinkedIn de Kalliny Santos" title="LinkedIn de Kalliny Santos"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5.2 3.2A2.2 2.2 0 1 1 .8 3.2a2.2 2.2 0 0 1 4.4 0ZM1 8.1h4.3V23H1V8.1Zm6.8 0h4.1v2h.1c.6-1.1 2-2.3 4.2-2.3 4.5 0 5.3 3 5.3 7V23h-4.3v-7.3c0-1.7 0-3.9-2.4-3.9s-2.8 1.9-2.8 3.8V23H7.8V8.1Z"/></svg></a></div>
+      </div>
+      <div class="hero-actions">
+        <span id="sourceBadge" class="source-badge">Base demonstrativa</span>
+        <label class="button button-primary" for="csvInput">Importar CSV</label>
+        <input id="csvInput" type="file" accept=".csv,text/csv" hidden>
+      </div>
+    </header>
+
+    <section class="notice" aria-live="polite">
+      <span class="notice-icon">i</span>
+      <div><strong>Dados demonstrativos</strong><p id="validationMessage">Você está visualizando uma base fictícia para a atividade. Importe um CSV para substituí-la.</p></div>
+    </section>
+
+    <section class="panel filters" aria-labelledby="filters-title">
+      <div class="section-heading"><div><p class="eyebrow">EXPLORAÇÃO</p><h2 id="filters-title">Filtros da análise</h2></div><button id="clearFilters" class="button button-ghost" type="button">Limpar filtros</button></div>
+      <div class="filter-grid">
+        <div class="field"><label for="startDate">Data inicial</label><input id="startDate" type="date"></div>
+        <div class="field"><label for="endDate">Data final</label><input id="endDate" type="date"></div>
+        <div class="field"><label for="categoryFilter">Categoria</label><select id="categoryFilter"><option value="">Todas as categorias</option></select></div>
+        <div class="field"><label for="regionFilter">Região</label><select id="regionFilter"><option value="">Todas as regiões</option></select></div>
+      </div>
+    </section>
+
+    <section class="metrics" aria-label="Indicadores principais">
+      <article class="metric-card"><span class="metric-icon" aria-hidden="true">₣</span><span class="metric-label">Faturamento total</span><strong id="totalRevenue">R$ 0,00</strong><span class="metric-helper">soma das vendas filtradas</span></article>
+      <article class="metric-card"><span class="metric-icon" aria-hidden="true">✦</span><span class="metric-label">Quantidade de vendas</span><strong id="salesCount">0</strong><span class="metric-helper">IDs únicos</span></article>
+      <article class="metric-card"><span class="metric-icon" aria-hidden="true">▦</span><span class="metric-label">Unidades vendidas</span><strong id="unitsSold">0</strong><span class="metric-helper">produtos vendidos</span></article>
+      <article class="metric-card accent"><span class="metric-icon" aria-hidden="true">◆</span><span class="metric-label">Ticket médio</span><strong id="averageTicket">R$ 0,00</strong><span class="metric-helper">faturamento por venda</span></article>
+    </section>
+
+    <section class="charts-grid">
+      <article class="panel chart-panel chart-wide"><div class="chart-heading"><div><p class="eyebrow">EVOLUÇÃO</p><h2>Faturamento mensal</h2></div><span class="unit">em R$</span></div><div class="chart-wrap"><canvas id="monthlyChart" aria-label="Gráfico de linha do faturamento mensal"></canvas></div></article>
+      <article class="panel chart-panel"><div class="chart-heading"><div><p class="eyebrow">MIX DE PRODUTOS</p><h2>Por categoria</h2></div><span class="unit">em R$</span></div><div class="chart-wrap"><canvas id="categoryChart" aria-label="Gráfico de barras do faturamento por categoria"></canvas></div></article>
+      <article class="panel chart-panel"><div class="chart-heading"><div><p class="eyebrow">DISTRIBUIÇÃO</p><h2>Por região</h2></div><span class="unit">em R$</span></div><div class="chart-wrap"><canvas id="regionChart" aria-label="Gráfico de barras do faturamento por região"></canvas></div><p id="regionHint" class="chart-hint"></p></article>
+      <article class="panel chart-panel chart-wide"><div class="chart-heading"><div><p class="eyebrow">DESEMPENHO</p><h2>Faturamento por produto</h2></div><span class="unit">em R$</span></div><div class="chart-wrap"><canvas id="productRevenueChart" aria-label="Gráfico de barras do faturamento por produto"></canvas></div></article>
+      <article class="panel chart-panel"><div class="chart-heading"><div><p class="eyebrow">VOLUME</p><h2>Unidades por produto</h2></div><span class="unit">unidades</span></div><div class="chart-wrap"><canvas id="productUnitsChart" aria-label="Gráfico de barras das unidades vendidas por produto"></canvas></div></article>
+      <article class="panel chart-panel"><div class="chart-heading"><div><p class="eyebrow">PARTICIPAÇÃO</p><h2>Receita por categoria</h2></div><span class="unit">percentual</span></div><div class="chart-wrap"><canvas id="categoryShareChart" aria-label="Gráfico de rosca da participação das categorias no faturamento"></canvas></div></article>
+      <article class="panel chart-panel chart-wide"><div class="chart-heading"><div><p class="eyebrow">RITMO DE VENDAS</p><h2>Unidades por mês</h2></div><span class="unit">unidades</span></div><div class="chart-wrap"><canvas id="monthlyUnitsChart" aria-label="Gráfico de linha das unidades vendidas por mês"></canvas></div></article>
+    </section>
+
+    <section class="panel table-panel"><div class="table-heading"><div><p class="eyebrow">DETALHAMENTO</p><h2>Vendas filtradas</h2><p id="recordCount" class="record-count">0 registros exibidos</p></div><div class="table-tools"><label class="search"><span aria-hidden="true">⌕</span><input id="tableSearch" type="search" placeholder="Pesquisar na tabela" aria-label="Pesquisar na tabela"></label><button id="exportCsv" class="button button-secondary" type="button">Exportar CSV</button></div></div><div id="emptyState" class="empty-state" hidden><strong>Nenhum resultado encontrado</strong><p>Ajuste os filtros ou a pesquisa para visualizar os dados.</p></div><div class="table-scroll"><table id="salesTable"><thead><tr><th data-key="id_venda">ID <span>↕</span></th><th data-key="data">Data <span>↕</span></th><th data-key="produto">Produto <span>↕</span></th><th data-key="categoria">Categoria <span>↕</span></th><th data-key="regiao">Região <span>↕</span></th><th data-key="quantidade">Unidades <span>↕</span></th><th data-key="preco_unitario">Preço unitário <span>↕</span></th><th data-key="faturamento">Faturamento <span>↕</span></th></tr></thead><tbody></tbody></table></div><div class="table-footer"><span id="pageInfo">Página 1</span><div><button id="prevPage" class="page-button" type="button" aria-label="Página anterior">←</button><button id="nextPage" class="page-button" type="button" aria-label="Próxima página">→</button></div></div></section>
+    <footer><span>Brasa &amp; Pão</span><span>Projeto acadêmico • análise exploratória</span></footer>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>

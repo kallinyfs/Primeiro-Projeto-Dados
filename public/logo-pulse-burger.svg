@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" role="img" aria-labelledby="title desc">
+  <title id="title">Logo Pulse Burger</title>
+  <desc id="desc">Selo vermelho retrô com um hambúrguer estilizado</desc>
+  <circle cx="50" cy="50" r="47" fill="#c85d4d" stroke="#3d2b24" stroke-width="4"/>
+  <path d="M24 42c3-13 13-20 26-20s23 7 26 20" fill="#fffaf2" stroke="#3d2b24" stroke-width="4" stroke-linejoin="round"/>
+  <path d="M27 42h46" stroke="#d2a33d" stroke-width="5" stroke-linecap="round"/>
+  <path d="M24 48h52" stroke="#9a775e" stroke-width="6" stroke-linecap="round"/>
+  <path d="M24 58h52l-5 11H29z" fill="#3d2b24" stroke="#3d2b24" stroke-width="3" stroke-linejoin="round"/>
+  <path d="M27 75c7 6 39 6 46 0" fill="none" stroke="#fffaf2" stroke-width="5" stroke-linecap="round"/>
+  <circle cx="43" cy="31" r="1.6" fill="#3d2b24"/>
+  <circle cx="55" cy="28" r="1.6" fill="#3d2b24"/>
+  <circle cx="63" cy="34" r="1.6" fill="#3d2b24"/>
+</svg>
