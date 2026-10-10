@@ -1,4 +1,4 @@
-# Pulse Vendas
+# Brasa & Pão Hamburgeria
 
 Dashboard interativo de análise de vendas para a disciplina de Fundamentos de IA e Análise de Dados. A interface foi feita com HTML, CSS e JavaScript puro, com gráficos em Chart.js e importação de arquivos em Papa Parse.
 
